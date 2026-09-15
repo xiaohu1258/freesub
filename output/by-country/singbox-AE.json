@@ -8,7 +8,7 @@
       "tag": "🇦🇪 阿联酋 (UAE) 01 - xiaohe",
       "server": "31.58.181.88",
       "server_port": 8443,
-      "uuid": "64532781-8f49-4837-9943-87142e8c5ddc",
+      "uuid": "70bd60b1-f399-4df4-ad32-9adc40ae5f2c",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
@@ -25,24 +25,8 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇦🇪 阿联酋 (UAE) 02 - xiaohe",
-      "server": "srv-21bac9.vless.monster",
-      "server_port": 2087,
-      "uuid": "df9f5aca-eda0-428f-a752-e53866153d12",
-      "tls": {
-        "enabled": true,
-        "server_name": "srv-21bac9.vless.monster",
-        "insecure": false
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "freegrpc"
-      }
-    },
-    {
       "type": "hysteria2",
-      "tag": "🇦🇪 阿联酋 (UAE) 03 - xiaohe",
+      "tag": "🇦🇪 阿联酋 (UAE) 02 - xiaohe",
       "server": "130.49.161.70",
       "server_port": 443,
       "password": "p7Q76LzlnS4hIzr1W3staBOnUe_WwSkR",
@@ -54,6 +38,26 @@
       "obfs": {
         "type": "salamander",
         "password": "rG07s3COMIEvdnQipRyWzx_H_2xygNC3"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇦🇪 阿联酋 (UAE) 03 - xiaohe",
+      "server": "31.56.189.27",
+      "server_port": 2087,
+      "uuid": "df9f5aca-eda0-428f-a752-e53866153d12",
+      "tls": {
+        "enabled": true,
+        "server_name": "srv-21bac9.vless.monster",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "freegrpc"
       }
     },
     {
@@ -83,6 +87,29 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇦🇪 阿联酋 (UAE) 06 - xiaohe",
+      "server": "207.148.99.230",
+      "server_port": 443,
+      "uuid": "d342d11e-d424-4583-b36e-524ab1f0afa4",
+      "tls": {
+        "enabled": true,
+        "server_name": "cdn8848.776676.xyz",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/test/company/library?ed=2560",
+        "headers": {
+          "Host": "cdn8848.776676.xyz"
+        }
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
@@ -91,7 +118,8 @@
         "🇦🇪 阿联酋 (UAE) 02 - xiaohe",
         "🇦🇪 阿联酋 (UAE) 03 - xiaohe",
         "🇦🇪 阿联酋 (UAE) 04 - xiaohe",
-        "🇦🇪 阿联酋 (UAE) 05 - xiaohe"
+        "🇦🇪 阿联酋 (UAE) 05 - xiaohe",
+        "🇦🇪 阿联酋 (UAE) 06 - xiaohe"
       ]
     },
     {
@@ -102,7 +130,8 @@
         "🇦🇪 阿联酋 (UAE) 02 - xiaohe",
         "🇦🇪 阿联酋 (UAE) 03 - xiaohe",
         "🇦🇪 阿联酋 (UAE) 04 - xiaohe",
-        "🇦🇪 阿联酋 (UAE) 05 - xiaohe"
+        "🇦🇪 阿联酋 (UAE) 05 - xiaohe",
+        "🇦🇪 阿联酋 (UAE) 06 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

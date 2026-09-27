@@ -32,18 +32,39 @@ proxies:
   servername: www.apple.com
   client-fingerprint: chrome
 - name: 🇪🇸 西班牙 (Spain) 04 - xiaohe
-  server: 138.124.181.185
+  server: 108.181.121.226
+  port: 8388
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: WSyL4XTwNsdv
+- name: 🇪🇸 西班牙 (Spain) 05 - xiaohe
+  server: mygptagent.org
   port: 443
   udp: true
-  type: vless
-  uuid: 0a975d79-6930-4861-a105-dc50793456de
-  flow: xtls-rprx-vision
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  alterId: 0
+  cipher: auto
   tls: true
-  reality-opts:
-    public-key: D2NOHlDThz1hjnJyALYmK_2You29nfyoZCwK9Vou9xU
-    short-id: 72ae7f89582e5c43
-  servername: bags.yump.online
-  client-fingerprint: random
+  servername: mygptagent.org
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /linkvws
+    headers:
+      Host: mygptagent.org
+- name: 🇪🇸 西班牙 (Spain) 06 - xiaohe
+  server: 185.114.72.31
+  port: 2053
+  udp: true
+  type: trojan
+  password: humanity
+  sni: www.calmlunch.com
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /assignment
 proxy-groups:
 - name: PROXIES
   type: select
@@ -53,6 +74,8 @@ proxy-groups:
   - 🇪🇸 西班牙 (Spain) 02 - xiaohe
   - 🇪🇸 西班牙 (Spain) 03 - xiaohe
   - 🇪🇸 西班牙 (Spain) 04 - xiaohe
+  - 🇪🇸 西班牙 (Spain) 05 - xiaohe
+  - 🇪🇸 西班牙 (Spain) 06 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -62,5 +85,7 @@ proxy-groups:
   - 🇪🇸 西班牙 (Spain) 02 - xiaohe
   - 🇪🇸 西班牙 (Spain) 03 - xiaohe
   - 🇪🇸 西班牙 (Spain) 04 - xiaohe
+  - 🇪🇸 西班牙 (Spain) 05 - xiaohe
+  - 🇪🇸 西班牙 (Spain) 06 - xiaohe
 rules:
 - MATCH,PROXIES

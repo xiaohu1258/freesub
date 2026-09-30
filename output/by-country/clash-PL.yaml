@@ -30,27 +30,6 @@ proxies:
   servername: prod.pl-node-01.security-sbrf.ru
   client-fingerprint: firefox
 - name: 🇵🇱 波兰 (Poland) 03 - xiaohe
-  server: cheerful-swan.rooster465.autos
-  port: 443
-  udp: true
-  type: trojan
-  password: UX82473651
-  sni: cheerful-swan.rooster465.autos
-  skip-cert-verify: true
-- name: 🇵🇱 波兰 (Poland) 04 - xiaohe
-  server: 78.17.97.201
-  port: 443
-  udp: true
-  type: vless
-  uuid: 6db7ea14-ed33-4591-a9b1-f1e91b1c0ff5
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: Jx7Z4PZ5DvGyEniIJhf6LwetaZ1_WDvPdpqtBDYOjyM
-    short-id: 42df
-  servername: ozone.nl
-  client-fingerprint: firefox
-- name: 🇵🇱 波兰 (Poland) 05 - xiaohe
   server: 83.168.95.145
   port: 443
   udp: true
@@ -63,6 +42,22 @@ proxies:
     short-id: d345ad4657adeef9
   servername: google.com
   client-fingerprint: ''
+- name: 🇵🇱 波兰 (Poland) 04 - xiaohe
+  server: cheerful-swan.rooster465.autos
+  port: 443
+  udp: true
+  type: trojan
+  password: UX82473651
+  sni: cheerful-swan.rooster465.autos
+  skip-cert-verify: true
+- name: 🇵🇱 波兰 (Poland) 05 - xiaohe
+  server: 45.192.12.93
+  port: 443
+  udp: true
+  type: hysteria2
+  password: YutbgyXL1mGaSlBXDoEucWvYbrDCINgUcQ6R6_At5Pjr2xCc
+  sni: admin.wwwinternetvideo.click
+  skip-cert-verify: false
 - name: 🇵🇱 波兰 (Poland) 06 - xiaohe
   server: pl-waw.dontblockmepls.com
   port: 2063
@@ -76,15 +71,20 @@ proxies:
   servername: rusbid.de
   client-fingerprint: firefox
 - name: 🇵🇱 波兰 (Poland) 07 - xiaohe
-  server: 144.31.49.47
-  port: 443
+  server: 188.114.96.19
+  port: 80
   udp: true
-  type: hysteria2
-  password: YutbgyXL1mGaSlBXDoEucWvYbrDCINgUcQ6R6_At5Pjr2xCc
-  sni: admin.wwwinternetvideo.click
-  skip-cert-verify: true
+  type: vmess
+  uuid: aed88e79-5762-4d2f-86fa-f438f32a7654
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: google.whatsapp.snapp.torob.basalam.hesanid8.ir.
 - name: 🇵🇱 波兰 (Poland) 08 - xiaohe
-  server: 144.31.5.3
+  server: pl4.moritech.net
   port: 443
   udp: true
   type: vless

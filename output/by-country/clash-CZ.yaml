@@ -5,18 +5,19 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇨🇿 捷克 (Czech) 01 - xiaohe
-  server: 85.117.235.50
+  server: 104.21.82.226
   port: 443
   udp: true
   type: vless
-  uuid: f4d71fd6-1c25-4748-836b-1dbda9268039
-  flow: xtls-rprx-vision
+  uuid: 36a857e4-f3d4-43aa-8b90-d7da849da989
   tls: true
-  reality-opts:
-    public-key: PmdZ2ETkHc0zjYcs22xT_wyZk5fEpX7mg7RP396HBBc
-    short-id: 232b1b09e45325a4
-  servername: cz1.animeteka.info
-  client-fingerprint: firefox
+  servername: 002.Inc-ElectROcElL-001-002.WoRKERS.DEV
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /eyJqdW5rIjoib0RnakxTZUZvOSIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=
+    headers:
+      Host: 002.inc-electrocell-001-002.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select

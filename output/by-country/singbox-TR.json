@@ -12,18 +12,28 @@
       "password": "Rzv4KXTXvFEqeALuBgzETlujcXrzIAsrSMAevky5x8c=:hdA4n/xn83dcbzxCAxapim47QxGlbAUPQ8I1rbC2RN8="
     },
     {
+      "type": "vmess",
+      "tag": "🇹🇷 土耳其 (Turkey) 02 - xiaohe",
+      "server": "netork.povrak.ir",
+      "server_port": 37523,
+      "uuid": "ce0bcb75-baa7-41a7-833e-eb54a8f6a08e",
+      "security": "auto"
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇹🇷 土耳其 (Turkey) 01 - xiaohe"
+        "🇹🇷 土耳其 (Turkey) 01 - xiaohe",
+        "🇹🇷 土耳其 (Turkey) 02 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇹🇷 土耳其 (Turkey) 01 - xiaohe"
+        "🇹🇷 土耳其 (Turkey) 01 - xiaohe",
+        "🇹🇷 土耳其 (Turkey) 02 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

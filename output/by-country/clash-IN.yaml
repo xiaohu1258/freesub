@@ -5,14 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇮🇳 印度 (India) 01 - xiaohe
-  server: 144.24.109.215
-  port: 51000
-  udp: true
-  type: hysteria2
-  password: 06133d56-2d98-4ca5-b9d3-bbf2d65bc238
-  sni: cn.cremedelamer.com
-  skip-cert-verify: true
-- name: 🇮🇳 印度 (India) 02 - xiaohe
   server: 152.67.8.205
   port: 80
   udp: true
@@ -29,13 +21,11 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇮🇳 印度 (India) 01 - xiaohe
-  - 🇮🇳 印度 (India) 02 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇮🇳 印度 (India) 01 - xiaohe
-  - 🇮🇳 印度 (India) 02 - xiaohe
 rules:
 - MATCH,PROXIES
